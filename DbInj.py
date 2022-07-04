@@ -38,10 +38,10 @@ class dbUsage:
 class Web3Function():
     
  global web3 
- web3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/6a2daf18fc2d42e187e35eeb749e206c"))
+ web3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/"))
 
  def sendTnx(addressSend = '0x3F32Fa3F40Eb5486B34F8a5eCfefA964a1731a9f' ,
-             privateKey = "b72c753b0236d02a95e3f0942c26873cb78b2de18da77d20bcd8e9e1b7a85427", 
+             privateKey = "", 
              addressRecipient = "",
              amount = "0.1",
              Oldnonce = None
