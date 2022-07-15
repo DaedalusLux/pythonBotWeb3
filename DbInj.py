@@ -47,12 +47,12 @@ class Web3Function():
              Oldnonce = None
              
   ):
-#   web3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/6a2daf18fc2d42e187e35eeb749e206c"))
+#   web3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/"))
   check1 = web3.isConnected() # Trigger the function only if the connection is estabilished
 
   
-  account_1 = addressSend      #'0x3F32Fa3F40Eb5486B34F8a5eCfefA964a1731a9f'
-  private_key1 = privateKey     #'b72c753b0236d02a95e3f0942c26873cb78b2de18da77d20bcd8e9e1b7a85427'
+  account_1 = addressSend     
+  private_key1 = privateKey    
   nonce = web3.eth.getTransactionCount(account_1)
   gas = 2000000
   while Oldnonce == nonce:
