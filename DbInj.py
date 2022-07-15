@@ -1,7 +1,7 @@
 import csv
 import mysql.connector
 from web3 import Web3
-import time
+
 
 
 
