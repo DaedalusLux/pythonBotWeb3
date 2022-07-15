@@ -1,5 +1,5 @@
 
-import time
+
 from DbInj import *
 
 # dbUsage.createCsv() # Create the csv
@@ -13,7 +13,7 @@ for n in reader:
    user["address"] = n[0]
    user["balance"] = n[1]
    users.append(user)
-#    Web3Function.sendTnx(addressRecipient=user["address"], amount="0.01")
+
 
 
 nonce = None
