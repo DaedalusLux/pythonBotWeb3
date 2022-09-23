@@ -1,6 +1,18 @@
 
 
 from DbInj import *
+import requests
+
+
+
+TOKEN = "" #insert token of your bot
+YourId = "" #insert your id
+message = "I ran the script, check that everything is ok"
+
+def sendMex():
+
+ url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={YourId}&text={message}"
+ print(requests.get(url).json())
 
 # dbUsage.createCsv() # Create the csv
 users = []
@@ -21,6 +33,9 @@ for n in range(len(users)):
     userss = users[n]
     print(userss['address'])
     nonce = Web3Function.sendTnx(addressRecipient=userss["address"], amount="0.01", Oldnonce=nonce)
+      
+      
+sendMex()
 
     
 
