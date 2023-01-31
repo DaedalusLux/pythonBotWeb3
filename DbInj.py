@@ -40,7 +40,7 @@ class Web3Function():
  global web3 
  web3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/"))
 
- def sendTnx(addressSend = '0x3F32Fa3F40Eb5486B34F8a5eCfefA964a1731a9f' ,
+ def sendTnx(addressSend = '' ,
              privateKey = "", 
              addressRecipient = "",
              amount = "0.1",
