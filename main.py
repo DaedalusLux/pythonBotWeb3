@@ -7,7 +7,7 @@ import requests
 
 TOKEN = "" #insert token of your bot
 YourId = "" #insert your id
-message = "I ran the script, check that everything is ok"
+message = "I ran the script, check if everything is ok"
 
 def sendMex():
 
